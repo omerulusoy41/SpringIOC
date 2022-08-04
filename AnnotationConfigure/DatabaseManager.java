@@ -3,7 +3,7 @@ package AnnotationConfigure;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("Manager")
 public class DatabaseManager {
 	
 //@Autowired
