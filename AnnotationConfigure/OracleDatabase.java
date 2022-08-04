@@ -1,9 +1,10 @@
 package AnnotationConfigure;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+@Qualifier("Oracle")
 public class OracleDatabase implements Database {
 
 	@Override

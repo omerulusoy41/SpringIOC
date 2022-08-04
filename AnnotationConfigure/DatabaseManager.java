@@ -1,13 +1,14 @@
 package AnnotationConfigure;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("Manager")
 public class DatabaseManager {
 	
 //@Autowired
-	private Database mySqlDatabase;
+	private Database dat;
 	
 	public DatabaseManager() {
 		System.out.println("Default Contructor");
@@ -20,11 +21,11 @@ public class DatabaseManager {
 //	}
 	
 	@Autowired
-	public void setDat(Database mySqlDatabase) {
+	public void setDat(@Qualifier("Oracle")Database dat) {
 		System.out.println("Setter injection");
-		this.mySqlDatabase=mySqlDatabase;
+		this.dat=dat;
 	}
 	public void yaz() {
-		this.mySqlDatabase.yaz();
+		this.dat.yaz();
 	}
 }
