@@ -21,7 +21,7 @@ public class DatabaseManager {
 //	}
 	
 	@Autowired
-	public void setDat(@Qualifier("Oracle")Database dat) {
+	public void setDat(@Qualifier("MySql")Database dat) {
 		System.out.println("Setter injection");
 		this.dat=dat;
 	}

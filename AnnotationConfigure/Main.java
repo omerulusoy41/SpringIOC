@@ -9,10 +9,10 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 public class Main {
 
 	public static void main(String[] args) {
-//		ApplicationContext context = new ClassPathXmlApplicationContext("resource/ikinci.xml");
-//		DatabaseManager manager=context.getBean("Manager",DatabaseManager.class);
-//		manager.yaz();
-		spelExample();
+		ApplicationContext context = new ClassPathXmlApplicationContext("resource/ikinci.xml");
+		DatabaseManager manager=context.getBean("Manager",DatabaseManager.class);
+		manager.yaz();
+		//spelExample();
 		
      }
 	public static void spelExample() {
@@ -30,9 +30,6 @@ public class Main {
 		double sayi=(Double)exp.getValue();
 		System.out.println(sayi);
 		
-		exp=parser.parseExpression("#{ systemProperties['user.name'] }");
-		String userName=(String)exp.getValue();
-		System.out.println(userName);
 	}
 
 }
