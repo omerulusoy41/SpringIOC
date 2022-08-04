@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class DatabaseManager {
 	
 //@Autowired
-	private Database dat;
+	private Database mySqlDatabase;
 	
 	public DatabaseManager() {
 		System.out.println("Default Contructor");
@@ -20,11 +20,11 @@ public class DatabaseManager {
 //	}
 	
 	@Autowired
-	public void setDat(Database dat) {
+	public void setDat(Database mySqlDatabase) {
 		System.out.println("Setter injection");
-		this.dat=dat;
+		this.mySqlDatabase=mySqlDatabase;
 	}
 	public void yaz() {
-		this.dat.yaz();
+		this.mySqlDatabase.yaz();
 	}
 }
