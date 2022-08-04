@@ -25,6 +25,14 @@ public class Main {
 		exp=parser.parseExpression("new String('HELLO World').toUpperCase()");
 		String name=(String)exp.getValue();
 		System.out.println(name);
+
+		exp=parser.parseExpression("T(java.lang.Math).random()*100");
+		double sayi=(Double)exp.getValue();
+		System.out.println(sayi);
+		
+		exp=parser.parseExpression("#{ systemProperties['user.name'] }");
+		String userName=(String)exp.getValue();
+		System.out.println(userName);
 	}
 
 }
