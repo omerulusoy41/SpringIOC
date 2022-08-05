@@ -2,14 +2,17 @@ package JavaBasedConfigure;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+@ComponentScan(basePackageClasses =Configure.class)
 public class Main {
 
 	public static void main(String[] args) {
 		//olusum1();
 		//olusum2();
-		olusum3();
+		//olusum3();
+		olusum4();
 	}
 	public static void olusum1() {
 		//context e configure classini register edip refresh ederek beanlerin olusumu saglandi 
@@ -30,6 +33,12 @@ public class Main {
 		ApplicationContext context=new AnnotationConfigApplicationContext(Configure.class);
 		Class1 c1=context.getBean(Class1.class);
 		System.out.println(c1);
+	}
+	public static void olusum4() {
+		//Bu classda @ComponentScan anotasyonu ile taranacak classi belirterek olusturuldu
+		ApplicationContext context=new AnnotationConfigApplicationContext(Main.class);
+		Class2 c2=context.getBean(Class2.class);
+		System.out.println(c2);
 	}
 
 }
