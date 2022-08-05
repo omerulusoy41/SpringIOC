@@ -1,5 +1,8 @@
 package XmlAnnotJBaseConfExample;
 
+import org.springframework.stereotype.Component;
+
+@Component("oracle")
 public class OracleDatabase extends  AbsDatabase{
 
 	@Override

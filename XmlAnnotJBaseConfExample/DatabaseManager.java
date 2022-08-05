@@ -1,7 +1,9 @@
 package XmlAnnotJBaseConfExample;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component("manager")
 public class DatabaseManager {
 	private Database dat;
 	

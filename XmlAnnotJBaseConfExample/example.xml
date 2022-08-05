@@ -7,25 +7,5 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context.xsd"
 > 
-	<context:property-placeholder location="XmlAnnotJBaseConfExample/values.properties"/>
-	<context:annotation-config></context:annotation-config>
-	<bean id="manager" class="XmlAnnotJBaseConfExample.DatabaseManager">
-	</bean>
-	<bean id="absdatabase" abstract="true">
-		<property name="name" value="${name}"></property>
-		<property name="connectWord" value="${connectWord}"></property>
-		<property name="ports" >
-			<array>
-				<value>8080</value>
-				<value>8081</value>
-			</array>
-		</property>
-	</bean>
-	<bean id="MySql" primary="true" parent="absdatabase" class="XmlAnnotJBaseConfExample.MySqlDatabase">
-	<qualifier></qualifier>
-	</bean>
-	<bean id="Oracle" parent="absdatabase" class="XmlAnnotJBaseConfExample.OracleDatabase">
-	</bean>
-	
-
+	<context:component-scan base-package="XmlAnnotJBaseConfExample"></context:component-scan>
 </beans>
