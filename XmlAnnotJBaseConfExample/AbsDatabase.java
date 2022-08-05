@@ -3,7 +3,6 @@ package XmlAnnotJBaseConfExample;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 
-
 @PropertySource("classpath:XmlAnnotJBaseConfExample/values.properties")
 public abstract class AbsDatabase implements Database{
 	
