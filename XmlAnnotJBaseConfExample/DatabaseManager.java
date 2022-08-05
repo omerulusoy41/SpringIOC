@@ -1,8 +1,11 @@
 package XmlAnnotJBaseConfExample;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class DatabaseManager {
 	private Database dat;
 	
+	@Autowired
 	public DatabaseManager(Database dat) {
 		this.dat=dat;
 	}
