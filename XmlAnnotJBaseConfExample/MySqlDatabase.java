@@ -1,10 +1,10 @@
 package XmlAnnotJBaseConfExample;
 
-import org.springframework.context.annotation.Primary;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("MySql")
-@Primary
+@Qualifier("mysql")
 public class MySqlDatabase extends AbsDatabase{
 	@Override
 	public void connect() {
