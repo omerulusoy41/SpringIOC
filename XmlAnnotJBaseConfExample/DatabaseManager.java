@@ -6,19 +6,19 @@ import org.springframework.stereotype.Component;
 
 @Component("manager")
 public class DatabaseManager {
-	private Database oracleDatabase;
-	
+	private Database dat;
+
 	@Autowired
-	public DatabaseManager(Database oracleDatabase) {
-		this.oracleDatabase=oracleDatabase;
+	public DatabaseManager(@Qualifier("oracle")Database dat) {
+		this.dat=dat;
 	}
 	public void connection() {
-		oracleDatabase.connect();
+		dat.connect();
 	}
 	public void listele() {
-		oracleDatabase.liste();
+		dat.liste();
 	}
 	public void info() {
-		oracleDatabase.info();
+		dat.info();
 	}
 }

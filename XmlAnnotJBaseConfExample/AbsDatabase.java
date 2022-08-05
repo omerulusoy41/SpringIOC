@@ -1,35 +1,20 @@
 package XmlAnnotJBaseConfExample;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
 
+@Component
+@PropertySource("classpath:XmlAnnotJBaseConfExample/values.properties")
 public abstract class AbsDatabase implements Database{
+	
+	@Value("${name}")
 	public String name;
+	@Value("${connectWord}")
 	public String connectWord;
+	@Value("${ports}")
 	public String[] ports;
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getConnectWord() {
-		return connectWord;
-	}
-
-	public void setConnectWord(String connectWord) {
-		this.connectWord = connectWord;
-	}
-
-	public String[] getPorts() {
-		return ports;
-	}
-
-	public void setPorts(String[] ports) {
-		this.ports = ports;
-	}
-
 	@Override
 	public void info() {
 		System.out.println("name="+name);
