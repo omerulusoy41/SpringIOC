@@ -1,15 +1,17 @@
 package AnnotationConfigure;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 
+@ComponentScan(basePackages = "AnnotationConfigure")
 public class Main {
 
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("resource/ikinci.xml");
+		ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
 		DatabaseManager manager=context.getBean("Manager",DatabaseManager.class);
 		manager.yaz();
 		//spelExample();
