@@ -1,15 +1,10 @@
 package XmlAnnotJBaseConfExample;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
-
-@Component("manager")
 public class DatabaseManager {
 	private Database dat;
 
-	@Autowired
-	public DatabaseManager(@Qualifier("oracle")Database dat) {
+
+	public DatabaseManager(Database dat) {
 		this.dat=dat;
 	}
 	public void connection() {
