@@ -39,8 +39,8 @@ public class Main {
 	public static void olusum4() {
 		//Bu classda @ComponentScan anotasyonu ile taranacak classi belirterek olusturuldu
 		ApplicationContext context=new AnnotationConfigApplicationContext(Main.class);
-		Class2 c2=context.getBean(Class2.class);
-		System.out.println(c2);
+		Class1 c1=context.getBean(Class1.class);
+		System.out.println(c1);
 	}
 
 }
