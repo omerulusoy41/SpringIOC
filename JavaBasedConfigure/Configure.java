@@ -9,7 +9,7 @@ public class Configure {
 	public Class1 getClass1() {
 		return new Class1();
 	}
-	@Bean
+	@Bean("class2")
 	public Class2 getClass2() {
 		return new Class2();
 	}
