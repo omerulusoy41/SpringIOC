@@ -1,7 +1,6 @@
 ## SpringFramework 
-- i used to Spring Framework in my repository.  
-- divided by configration   
-stand by for the continuation :)
+In my repository, the Spring framework, which is separated according to the configurations and dependency injections, is used.  
+In addition, I have a desktop chess application that I created according to swing mysql and Spring annotations.  
 ## SwingSpringMySqlChess Demo
 Chess is an intelligence-enhancing game consisting of 64 squares and 32 pieces.I will show you the movements of the chess pieces according to their position in this application.Technologies I use in my application:  
 - Java
