@@ -28,5 +28,6 @@ let's look at the screenshots of the application I made
 ![satranc](https://github.com/omerulusoy41/SpringIOC-DI/blob/main/ScreenShoots/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20(19).png?raw=true)  
 #### shah move  
 ![satranc](https://github.com/omerulusoy41/SpringIOC-DI/blob/main/ScreenShoots/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20(20).png?raw=true)  
+untill we se you again...
 
 
