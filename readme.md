@@ -2,13 +2,16 @@
 In my repository, the Spring framework, which is separated according to the configurations and dependency injections, is used.  
 In addition, I have a desktop chess application that I created according to swing mysql and Spring annotations.  
 ## SwingSpringMySqlChess Demo
-Chess is an intelligence-enhancing game consisting of 64 squares and 32 pieces.I will show you the movements of the chess pieces according to their position in this application.Technologies I use in my application:  
+Chess is an intelligence-enhancing game consisting of 64 squares and 32 pieces.I will show you the movements of the chess pieces according to their position in this application.  
+> Technologies I use in my application:  
 - Java
 - Swing
 - Spring 
-- MySql   
-This photo has been downloaded from the internet for example purposes.  
-![satran](https://github.com/omerulusoy41/SpringIOC-DI/blob/main/ScreenShoots/satrancnasiloynanir7.jpg?raw=true)    
+- MySql  
+  
+This photo has been downloaded from the internet for example purposes.    
+![satranc](https://github.com/omerulusoy41/SpringIOC-DI/blob/main/ScreenShoots/satrancnasiloynanir7.jpg?raw=true)  
+  
 let's look at the screenshots of the application I made  
 #### User login screen  
 ![satranc](https://github.com/omerulusoy41/SpringIOC-DI/blob/main/ScreenShoots/Ekran%20G%C3%B6r%C3%BCnt%C3%BCs%C3%BC%20(12).png?raw=true)  
